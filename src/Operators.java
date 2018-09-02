@@ -7,8 +7,6 @@
 //    if the remaining total (#4) is equal to 20 or less.
 
 
-
-
 public class Operators {
     public static void main(String[] args) {
         double myVar1 = 20d;
