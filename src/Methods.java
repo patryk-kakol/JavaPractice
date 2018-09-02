@@ -20,6 +20,11 @@ public class Methods {
         // displayHighScorePosition test
         displayHighScorePosition("Bill", 6);
         displayHighScorePosition("Tim", 3);
+        //calculateHighScorePosition test
+        System.out.println(calculateHighScorePosition(1500));
+        System.out.println(calculateHighScorePosition(900));
+        System.out.println(calculateHighScorePosition(400));
+        System.out.println(calculateHighScorePosition(50));
     }
 
     public static void displayHighScorePosition(String name, int position) {
@@ -27,5 +32,10 @@ public class Methods {
                 + position + " on the high score table.");
     }
 
-
+    public static int calculateHighScorePosition(int score) {
+        if (score >= 1000) return 1;
+        else if (score >= 500) return 2;
+        else if (score >= 100) return 3;
+        else return 4;
+    }
 }
