@@ -5,6 +5,8 @@ public class MinAndMaxInput {
 
         int max = 0;
         int min = 0;
+        int a;
+        boolean start = true;
         Scanner reader = new Scanner(System.in);
 
         while ( true ) {
@@ -13,9 +15,16 @@ public class MinAndMaxInput {
             if (!reader.hasNextInt()) {
                 break;
             } else {
-                if (reader.nextInt() > max) max = reader.nextInt();
-                if (reader.nextInt() < min) min = reader.nextInt();
-
+                if ( start ) {
+                    a = reader.nextInt();
+                    min = a;
+                    max = a;
+                    start = !start;
+                } else {
+                    a = reader.nextInt();
+                    if (a > max) max = a;
+                    if (a < min) min = a;
+                }
             }
             //reader.nextLine();
         }
