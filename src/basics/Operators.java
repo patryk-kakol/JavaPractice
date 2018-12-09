@@ -1,4 +1,4 @@
-
+package basics;
 // 1. Create a double variable with the value 20
 // 2. Create a second variable of type double with the value 80
 // 3. Add both numbers up and multiply by 25

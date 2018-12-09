@@ -1,4 +1,4 @@
-// Create a method called displayHighScorePosition
+package basics;// Create a method called displayHighScorePosition
 // it should a players name as a parameter, and a 2nd parameter as a position in the high score table
 // You should display the players name along with a message like " managed to get into position " and the
 // position they got and a further message " on the high score table".
