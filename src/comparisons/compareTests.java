@@ -39,7 +39,7 @@ public class compareTests {
         Arrays.sort(intArray, new Comparator<Integer>() {
 
             public int compare(Integer i1, Integer i2) {
-                return (i1.compareTo(i2)) * -1;
+                return -(i1.compareTo(i2));
             }
         });
         System.out.println("Integers decreasing order: ");
@@ -47,12 +47,7 @@ public class compareTests {
             System.out.print(i + " ");
         }
 
-        Arrays.sort(intArray, new Comparator<Integer>() {
-
-            public int compare(Integer i1, Integer i2) {
-                return i1.compareTo(i2);
-            }
-        });
+        Arrays.sort(intArray);
         System.out.println("\nIntegers increasing order: ");
         for (Integer i : intArray) {
             System.out.print(i + " ");
