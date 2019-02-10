@@ -8,9 +8,7 @@ public class Main {
         SearchTree tree = new SearchTree(null);
         tree.traverse(tree.getRoot());
         String[] data = stringData.split(" ");
-        for (String s :data) {
-            tree.addItem(new Node(s));
-        }
+        for (String s :data) tree.addItem(new Node(s));
 
         tree.traverse(tree.getRoot());
         tree.removeItem(new Node("6"));
